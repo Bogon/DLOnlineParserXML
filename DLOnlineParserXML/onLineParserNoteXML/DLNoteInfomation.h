@@ -30,4 +30,6 @@
 
 @property (nonatomic,copy) NSString *createtime;
 
+@property (nonatomic)           BOOL isUnflod;
+
 @end
