@@ -10,6 +10,7 @@
 		6ABB05DD1E02994E00EB8E51 /* DLNoteUnfoldInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05DC1E02994E00EB8E51 /* DLNoteUnfoldInfomation.m */; };
 		6ABB05E01E029A9000EB8E51 /* DLNoteUnfoldInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05DF1E029A9000EB8E51 /* DLNoteUnfoldInfoTableViewCell.m */; };
 		6ABB05E31E029B4100EB8E51 /* DLNotesInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05E21E029B4100EB8E51 /* DLNotesInfomationViewController.m */; };
+		6ABB05E71E029DF600EB8E51 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05E61E029DF600EB8E51 /* README.md */; };
 		6ACB6BAD1E0236C300FCB180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB6BAC1E0236C300FCB180 /* main.m */; };
 		6ACB6BB01E0236C300FCB180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB6BAF1E0236C300FCB180 /* AppDelegate.m */; };
 		6ACB6BB21E0236C300FCB180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB6BB11E0236C300FCB180 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		6ABB05DF1E029A9000EB8E51 /* DLNoteUnfoldInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNoteUnfoldInfoTableViewCell.m; sourceTree = "<group>"; };
 		6ABB05E11E029B4100EB8E51 /* DLNotesInfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNotesInfomationViewController.h; sourceTree = "<group>"; };
 		6ABB05E21E029B4100EB8E51 /* DLNotesInfomationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNotesInfomationViewController.m; sourceTree = "<group>"; };
+		6ABB05E61E029DF600EB8E51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		6ACB6BA81E0236C300FCB180 /* DLOnlineParserXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLOnlineParserXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB6BAC1E0236C300FCB180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6ACB6BAE1E0236C300FCB180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		6ACB6BAB1E0236C300FCB180 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ABB05E61E029DF600EB8E51 /* README.md */,
 				6ACB6BAC1E0236C300FCB180 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 				6AD00DAF1E024C8300E912FE /* DLOnlineParserNotesXMLManager.m in Sources */,
 				6ACB6BAD1E0236C300FCB180 /* main.m in Sources */,
 				6AD00DAE1E024C8300E912FE /* DLNoteInfomation.m in Sources */,
+				6ABB05E71E029DF600EB8E51 /* README.md in Sources */,
 				6ABB05E31E029B4100EB8E51 /* DLNotesInfomationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
