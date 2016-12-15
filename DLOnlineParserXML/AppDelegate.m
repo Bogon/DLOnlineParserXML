@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DLOnlineParserNotesXMLManager.h"
-
+#import "DLNotesInfomationViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,11 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    [DLOnlineParserNotesXMLManager onlineParserNotesXML:@"http://192.168.0.126:8080/18701617157/2/%E8%97%8F%E5%9C%B0%E5%AF%86%E7%A0%812%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.xml" Completion:^(NSArray * _Nonnull responseObjects) {
-        NSLog(@"responseObjects.count = %ld",(long)responseObjects.count);
-    }];
-
-    [self.window setRootViewController:[[UIViewController alloc]init]];
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[[DLNotesInfomationViewController alloc]init]]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
