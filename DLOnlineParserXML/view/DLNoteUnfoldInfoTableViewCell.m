@@ -10,8 +10,11 @@
 
 @interface DLNoteUnfoldInfoTableViewCell ()
 
-@property (nonatomic,weak)UILabel * contentLabel;
-@property (nonatomic,weak)UIButton * unfoldBtn;
+@property (nonatomic,weak)  UILabel * contentLabel;
+
+@property (nonatomic,weak)  UILabel * noteBookContentLabel;
+
+@property (nonatomic,weak)  UIButton * unfoldBtn;
 
 @end
 

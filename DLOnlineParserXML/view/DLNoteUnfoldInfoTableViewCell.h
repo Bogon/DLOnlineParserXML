@@ -23,6 +23,7 @@
 @interface DLNoteUnfoldInfoTableViewCell : UITableViewCell
 
 @property (nonatomic,strong)DLNoteUnfoldInfomation *frameModel;
+
 @property (nonatomic,weak)id<UnfoldDelegate>delegate;
 
 @end

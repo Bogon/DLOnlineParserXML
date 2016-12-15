@@ -15,6 +15,7 @@
 #import "DLOnlineParserNotesXMLManager.h"
 
 @interface DLNotesInfomationViewController ()<UITableViewDelegate,UITableViewDataSource,UnfoldDelegate>
+
 @property (nonatomic,strong)NSMutableArray *dataArray;
 
 @property (nonatomic,strong)UITableView * tableView;
@@ -24,6 +25,7 @@
 @implementation DLNotesInfomationViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
