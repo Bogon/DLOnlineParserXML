@@ -37,9 +37,18 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+
         UILabel *contentLabel = [[UILabel alloc] init];
         [self.contentView addSubview:contentLabel];
         self.contentLabel = contentLabel;
+        contentLabel.font = [UIFont systemFontOfSize:16];
+        contentLabel.numberOfLines = 0;
+        contentLabel.userInteractionEnabled = YES;
+
+
+        UILabel *noteBookContentLabel = [[UILabel alloc] init];
+        [self.contentView addSubview:noteBookContentLabel];
+        self.noteBookContentLabel = noteBookContentLabel;
         contentLabel.font = [UIFont systemFontOfSize:16];
         contentLabel.numberOfLines = 0;
         contentLabel.userInteractionEnabled = YES;
@@ -52,6 +61,7 @@
         [self.contentView addSubview:unfoldBtn];
         [unfoldBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
         [unfoldBtn addTarget:self action:@selector(unflodCell) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     return self;
 }

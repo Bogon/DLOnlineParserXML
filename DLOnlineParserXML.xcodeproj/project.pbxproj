@@ -11,6 +11,7 @@
 		6ABB05E01E029A9000EB8E51 /* DLNoteUnfoldInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05DF1E029A9000EB8E51 /* DLNoteUnfoldInfoTableViewCell.m */; };
 		6ABB05E31E029B4100EB8E51 /* DLNotesInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05E21E029B4100EB8E51 /* DLNotesInfomationViewController.m */; };
 		6ABB05E71E029DF600EB8E51 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05E61E029DF600EB8E51 /* README.md */; };
+		6ABB05EE1E02A16100EB8E51 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB05ED1E02A16100EB8E51 /* NSString+Extension.m */; };
 		6ACB6BAD1E0236C300FCB180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB6BAC1E0236C300FCB180 /* main.m */; };
 		6ACB6BB01E0236C300FCB180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB6BAF1E0236C300FCB180 /* AppDelegate.m */; };
 		6ACB6BB21E0236C300FCB180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB6BB11E0236C300FCB180 /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 		6ABB05E11E029B4100EB8E51 /* DLNotesInfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNotesInfomationViewController.h; sourceTree = "<group>"; };
 		6ABB05E21E029B4100EB8E51 /* DLNotesInfomationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNotesInfomationViewController.m; sourceTree = "<group>"; };
 		6ABB05E61E029DF600EB8E51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		6ABB05EC1E02A16100EB8E51 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		6ABB05ED1E02A16100EB8E51 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		6ACB6BA81E0236C300FCB180 /* DLOnlineParserXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLOnlineParserXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB6BAC1E0236C300FCB180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6ACB6BAE1E0236C300FCB180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		6ABB05E81E02A11800EB8E51 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6ABB05EC1E02A16100EB8E51 /* NSString+Extension.h */,
+				6ABB05ED1E02A16100EB8E51 /* NSString+Extension.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		6ACB6B9F1E0236C300FCB180 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 				6ACB6BAF1E0236C300FCB180 /* AppDelegate.m */,
 				6ABB05E11E029B4100EB8E51 /* DLNotesInfomationViewController.h */,
 				6ABB05E21E029B4100EB8E51 /* DLNotesInfomationViewController.m */,
+				6ABB05E81E02A11800EB8E51 /* Component */,
 				6ABB05D91E02993300EB8E51 /* model */,
 				6ABB05DA1E02993300EB8E51 /* view */,
 				6ACB6BB11E0236C300FCB180 /* Assets.xcassets */,
@@ -201,6 +214,7 @@
 				6ACB6BAD1E0236C300FCB180 /* main.m in Sources */,
 				6AD00DAE1E024C8300E912FE /* DLNoteInfomation.m in Sources */,
 				6ABB05E71E029DF600EB8E51 /* README.md in Sources */,
+				6ABB05EE1E02A16100EB8E51 /* NSString+Extension.m in Sources */,
 				6ABB05E31E029B4100EB8E51 /* DLNotesInfomationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

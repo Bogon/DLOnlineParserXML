@@ -35,7 +35,7 @@
 
 - (void)initLoadData{
 
-    [DLOnlineParserNotesXMLManager onlineParserNotesXML:@"http://192.168.0.126:8080/18701617157/2/%E8%97%8F%E5%9C%B0%E5%AF%86%E7%A0%812%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.xml" Completion:^(NSArray * _Nonnull responseObjects) {
+    [DLOnlineParserNotesXMLManager onlineParserNotesXML:@"http://192.168.3.21:8080/18701617157/2/%E8%97%8F%E5%9C%B0%E5%AF%86%E7%A0%812%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.xml" Completion:^(NSArray * _Nonnull responseObjects) {
         NSLog(@"responseObjects.count = %ld",(long)responseObjects.count);
 
         [responseObjects enumerateObjectsUsingBlock:^(DLNoteInfomation *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -57,6 +57,7 @@
     return self.dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
     static NSString *cellId = @"DLNoteUnfoldInfoTableViewCell";
     DLNoteUnfoldInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (cell == nil) {
@@ -69,11 +70,13 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
     DLNoteUnfoldInfomation *frameModel = [self.dataArray objectAtIndex:indexPath.row];
     return frameModel.cellH;
 }
 
 - (void)UnfoldCellDidClickUnfoldBtn:(DLNoteUnfoldInfomation *)model{
+
     NSInteger index = [self.dataArray indexOfObject:model];
     DLNoteInfomation *model1 = model.model;
     model1.isUnflod = !model1.isUnflod;
@@ -87,6 +90,7 @@
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+
         _tableView.frame = self.view.bounds;
         _tableView.delegate = self;
         _tableView.dataSource = self;
